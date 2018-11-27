@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Handlebars-Helpers">
+	<template name="hview" value="{{#view $HELPER$}}&#10;$END$&#10;{{/view}}" description="Handlebars #view" toReformat="true" toShortenFQNames="true">
+	  <variable name="HELPER" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="hwith" value="{{#with $HELPER$}}&#10;$END$&#10;{{/with}}" description="Handlebars #with" toReformat="true" toShortenFQNames="true">
+	  <variable name="HELPER" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="hif" value="{{#if $HELPER$}}&#10;$END$&#10;{{/if}}" description="Handlebars #if" toReformat="true" toShortenFQNames="true">
+	  <variable name="HELPER" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="hifelse" value="{{#if $HELPER$}}&#10;$END$&#10;{{else}}&#10;&#10;{{/if}}" description="Handlebars #if-else" toReformat="true" toShortenFQNames="true">
+	  <variable name="HELPER" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="hunless" value="{{#unless $HELPER$}}&#10;$END$&#10;{{/unless}}" description="Handlebars #unless" toReformat="true" toShortenFQNames="true">
+	  <variable name="HELPER" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="heach" value="{{#each $HELPER$}}&#10;$END$&#10;{{/each}}" description="Handlebars #each" toReformat="true" toShortenFQNames="false">
+	  <variable name="HELPER" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="haction" value="{{action &quot;$METHOD$&quot; target=&quot;$TARGET$&quot;}}" description="Handlebars #action" toReformat="true" toShortenFQNames="true">
+	  <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+	  <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="hbindattr" value="{{bind-attr $PROP$=&quot;$VALUE$&quot;}}" description="Handlebars #bind-attr" toReformat="true" toShortenFQNames="true">
+	  <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+	  <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="hcomment" value="{{!-- $END$ --}}" description="Handlebars comment" toReformat="true" toShortenFQNames="true">
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="hdoublebraces" value="{{$END$}}" description="Handlebars escaped curly braces" toReformat="true" toShortenFQNames="true">
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+	<template name="htriplebraces" value="{{{$END$}}}" description="Handlebars raw curly braces" toReformat="true" toShortenFQNames="true">
+	  <context>
+	    <option name="Handlebars" value="true" />
+	  </context>
+	</template>
+</templateSet>
